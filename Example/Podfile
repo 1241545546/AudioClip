@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'AudioClip_Example' do
+  pod 'AudioClip', :path => '../'
+
+  target 'AudioClip_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
