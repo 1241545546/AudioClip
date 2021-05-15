@@ -1,0 +1,6 @@
+framework module AudioClip {
+  umbrella header "AudioClip-umbrella.h"
+
+  export *
+  module * { export * }
+}

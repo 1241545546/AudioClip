@@ -1,0 +1,27 @@
+PODS:
+  - AudioClip (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - AudioClip (from `../`)
+  - FBSnapshotTestCase
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  AudioClip:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AudioClip: dcce027def604ec51a4587039ad86957bc105937
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: 165b8b14a8929b6fa7aa746cae278fcc169a60ca
+
+COCOAPODS: 1.10.0

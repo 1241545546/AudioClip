@@ -8,6 +8,8 @@
 
 #import "SSViewController.h"
 
+#import "Transfer.h"
+
 @interface SSViewController ()
 
 @end
@@ -18,6 +20,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    [Transfer start:[NSBundle.mainBundle pathForResource:@"textsource" ofType:@"mp3"] with:[NSString stringWithFormat:@"%@/Documents/resultwav.wav",NSHomeDirectory()] config:[TranferConfig getConfig:0 sampleRate:0 fileType:(aac)] complete:^(BOOL state, NSError * _Nonnull error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning

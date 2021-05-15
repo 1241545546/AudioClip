@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AudioClip'
-  s.version          = '0.1.0'
+  s.version          = '0.0.1'
   s.summary          = 'A short description of AudioClip.'
 
 # This description is used to generate tags and improve search results.
@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/1241545546@qq.com/AudioClip'
+  s.homepage         = 'https://github.com/1241545546/AudioClip'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '1241545546@qq.com' => '1241545546@qq.com' }
-  s.source           = { :git => 'https://github.com/1241545546@qq.com/AudioClip.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/1241545546/AudioClip.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'AudioClip/Classes/**/*'
   
+  s.vendored_libraries = 'AudioClip/Classes/liblame/lib/libmp3lame.a'
+  
   # s.resource_bundles = {
   #   'AudioClip' => ['AudioClip/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'AudioToolbox'
+  
 end
